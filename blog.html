@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- talwind fremwork -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="bg-slate-400">
+        <h1 class="text-center text-3xl font-semibold py-3 mb-4">Welcome to our blog side</h1>
+    </header>
+    <main>
+        <!-- blog lection -->
+        <section class="container mx-auto grid gap-4">
+            <div>
+                <h4 class="text-xl">Question:(1)- What is the difference between Map, Filter, forEach, Find?</h4>
+                <p>ans:- (map) creates a new array by transforming each element of the original array. (filter) creates a new array by selecting only the elements that pass a certain test. (forEach) performs an operation on each element of the array without creating a new array. and (find) returns the first element in the array that satisfies a certain condition.</p>
+            </div>
+            <div>
+                <h4 class="text-xl">Question:(2)- Difference between Local Storage, Session Storage, and Cookies</h4>
+                <p>ans:- (Local Storage) and (Session Storage) are both used to store data locally on a user's device. but (Local Storage) persists data across browser sessions while Session Storage is cleared when the browser window or tab is closed. (Cookies) are primarily used for session management, personalization, and tracking, and can be accessed by both the server and the client.</p>
+            </div>
+            <div>
+                <h4 class="text-xl">Question:(3)- What is the JavaScript event loop?</h4>
+                <p>ans:-  the JavaScript event loop is a mechanism that manages the execution of non-blocking asynchronous operations by maintaining a call stack, a task queue, and a microtask queue, and continuously moving tasks from the queues to the call stack for execution.</p>
+            </div>
+            <div>
+                <h2 class="text-2xl">no-change.js file function discuss</h2>
+                <div class="grid gap-5">
+                    <div>
+                        <span class="text-xl">First function: (quizTimer)</span><br>
+                        => এখানে একটি ক্যুইজ ফাংশন ডিক্লেয়ার করা হয়েছে আর্গুমেন্ট হিসেবে true pass করে প্যারামিটার হিসেবে dismiss নেওয়া হয়েছে্।
+                        সবার প্রথমে একটি শর্ত দেওয়া হয়েছে যদি ডিসমিস হয় তাহলে টাইমআরকে ক্লিয়ারইন্টারভাল করে রিটার্ন করা হয়েছে। 
+                       আবারো  setInterval নামক একটি ফাংশন ডিক্লেয়ার করা হয়েছে, এখানে টাইমারের কিছু কাজ করা হয়েছে এবং value গুলো ডায়নামিক ভাবে পাচ করা হয়েছে। আবার একটি শর্ত দেওয়া হয়েছে কাউন্ট যদি ৬০ এর বেশি হয় এবং কাউন্ট কে ভাগ করলে যদি জিরো থাকে তাহলে কিছু সিএসএস এপ্লাই করা হয়েছে অন্যথায় অন্য কিছু সিএসএস সাপ্লাই করা হয়েছে।
+                    </div>
+                    <div>
+                        <span class="text-xl">Second function: (chooseQuiz)</span><br>
+                        => cooseQuiz নামক একটি ফাংশন ডিক্লেয়ার করা হয়েছে, ফাংশনটি অন ক্লিকের মাধ্যমে কল করে দুটি আর্গুমেন্ট পাস করা হয়েছে এবং প্যারামিটার হিসেবে index, givenAns নেওয়া হয়েছেঅ
+                        একটি for loop চালিয়ে কুইজের ভিতর থেকে ans নামক কিছু একটা বের করা হয়েছে,  
+                        তারপর একটি শর্ত দেওয়া হয়েছে isExit.id === quiz.id হয় তাহলে answers এর ভিতর splice ব্যবহার করে একটি আরে পাস করা হয়েছে।
+                         আর যদি শর্ত পূরণ না হয় তাহলে answers এর ভিতরে পুষ করা হয়েছে কুইজ ডাটা ।
+                        এবং সবশেষে displayAnswer কে কল করা হয়েছে।
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

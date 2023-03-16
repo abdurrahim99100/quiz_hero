@@ -59,7 +59,6 @@ const displayQuiz = (data) => {
   }
 
   data.forEach((quiz, i) => {
-    console.log(quiz.question);
     const quizContainer = document.getElementById('quizContainer');
     quizContainer.innerHTML += `<div class="m-3 py-3 px-4 shadow-sm rounded">
   <div class="flex items-center">
@@ -185,3 +184,11 @@ document.querySelector("#submit").addEventListener("click", () => {
   }, 1500);
   window.scrollTo(0, 0);
 });
+
+
+
+
+// blog button code;
+document.getElementById('btn-blog-spaclial').addEventListener('click', function(){
+  location.href = 'blog.html';
+})
