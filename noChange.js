@@ -13,6 +13,8 @@ const quizTimer = (dismiss) => {
     let min = covtMin.toString().length === 1 ? `0${covtMin}` : covtMin;
     let countSec = mod.toString().length === 1 ? `0${mod}` : mod;
 
+    
+    
     countHtml.innerHTML = `${
       min + ":" + countSec
     }<sub class="text-xs">sec</sub>`;
