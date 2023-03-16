@@ -190,4 +190,5 @@ document.querySelector("#submit").addEventListener("click", () => {
 // blog button code;
 document.getElementById('btn-blog-spaclial').addEventListener('click', function(){
   location.href = 'blog.html';
-})
+});
+// all done;
